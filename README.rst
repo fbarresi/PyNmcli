@@ -62,4 +62,4 @@ Just fork this repository and submit your pull request.
 Change log
 ========
 
-- Version 1.0.0 - First release
+- Version 1.0.1 - First release
