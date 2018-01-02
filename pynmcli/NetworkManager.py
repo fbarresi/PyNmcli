@@ -15,7 +15,6 @@ class NetworkManager(Nmcli):
         for arg in args:
             self.command += arg
 
-
     class General(Nmcli):
         def __init__(self, *args):
             super(NetworkManager.General, self).__init__()
@@ -43,7 +42,6 @@ class NetworkManager(Nmcli):
                 self.command += arg
             return self
 
-
     class Networking(Nmcli):
         def __init__(self, *args):
             super(NetworkManager.Networking, self).__init__()
@@ -64,7 +62,6 @@ class NetworkManager(Nmcli):
             for arg in args:
                 self.command += arg
             return self
-
 
     class Radio(Nmcli):
         def __init__(self, *args):
@@ -90,7 +87,6 @@ class NetworkManager(Nmcli):
             for arg in args:
                 self.command += arg
             return self
-
 
     class Connection(Nmcli):
         def __init__(self, *args):
@@ -163,7 +159,7 @@ class NetworkManager(Nmcli):
                 self.command += arg
             return self
 
-        def Import(self, *args):
+        def importConfiguration(self, *args):
             self.command += 'import '
             for arg in args:
                 self.command += arg
@@ -174,7 +170,6 @@ class NetworkManager(Nmcli):
             for arg in args:
                 self.command += arg
             return self
-
 
     class Device(Nmcli):
         def __init__(self, *args):
@@ -195,8 +190,7 @@ class NetworkManager(Nmcli):
                 self.command += arg
             return self
 
-
-        def Set(self, *args):
+        def setProperties(self, *args):
             self.command += 'set '
             for arg in args:
                 self.command += arg
@@ -249,10 +243,6 @@ class NetworkManager(Nmcli):
             for arg in args:
                 self.command += arg
             return self
-
-
-
-
 
 
 if __name__ == '__main__':
