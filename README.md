@@ -1,4 +1,6 @@
 # PyNmcli
+.. image:: https://travis-ci.org/fbarresi/PyNmcli.svg?branch=master
+    :alt: Travis CI build status
 Simple python interface to Network Manager CLI
 
 PyNmcli provides a easy to use python (2.7+ or 3+) interface to Network Manager CLI.
