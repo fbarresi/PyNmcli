@@ -6,7 +6,7 @@ def get_stdout(pi):
     if len(result[0]) > 0:
         return result[0]
     else:
-        return result[1]  #some error has occured
+        return result[1]  # some error has occured
 
 
 def execute_shell(command):
