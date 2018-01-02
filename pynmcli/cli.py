@@ -27,7 +27,7 @@ def execute(command='', errorstring='', wait=True, shellexec=False, ags=None):
         else:
             return p
     except subprocess.CalledProcessError as e:
-        print('error occured:' + errorstring)
+        print('error occured:' + errorstring + e.message)
         return errorstring
     except Exception as ea:
         print('Exception occured:' + ea.message)
