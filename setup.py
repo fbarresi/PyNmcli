@@ -1,10 +1,13 @@
 from setuptools import setup, find_packages
 
 
-the_version = open("VERSION").read().strip()
+def get_version(filename):
+    content = open(filename).read()
+    metadata = dict(re.findall("__([a-z]+)__ = '([^']+)'", content))
+    return metadata['version']
 
 setup(name='PyNmcli',
-	version=the_version,
+	version=get_version('pynmcli/__init__.py'),
     platforms=['linux'],
 	description='Simple python interface to Network Manager CLI',
 	license='commercial license',
