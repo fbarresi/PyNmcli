@@ -159,7 +159,7 @@ class NetworkManager(Nmcli):
                 self.command += arg
             return self
 
-        def importConfiguration(self, *args):
+        def import_configuration(self, *args):
             self.command += 'import '
             for arg in args:
                 self.command += arg
@@ -190,7 +190,7 @@ class NetworkManager(Nmcli):
                 self.command += arg
             return self
 
-        def setProperties(self, *args):
+        def set_properties(self, *args):
             self.command += 'set '
             for arg in args:
                 self.command += arg
