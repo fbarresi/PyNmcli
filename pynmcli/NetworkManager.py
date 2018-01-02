@@ -1,4 +1,4 @@
-from pynmcli.cli import execute_shell
+from .cli import execute_shell
 
 
 class Nmcli(object):

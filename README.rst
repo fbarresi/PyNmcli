@@ -45,11 +45,11 @@ Just import the package::
 
 and call Network Manager function just like: ::
 
-    result = cli.NetworkManager('--version').execute()
+    result = pynmcli.NetworkManager('--version').execute()
 
 or ::
 
-    result = cli.NetworkManager.Device().wifi('list').execute()
+    result = pynmcli.NetworkManager.Device().wifi('list').execute()
 
 Contribute
 ========

@@ -1,10 +1,9 @@
-from pynmcli.Networkmanager import Networkmanager as cli
-from pynmcli.utils import get_data
-
+from .NetworkManager import NetworkManager
+from .utils import get_data
 
 __version__ = '1.0.3'
 
 
 if __name__ == '__main__':
-    print(cli.NetworkManager('--version').execute())
-    print(get_data(cli.NetworkManager.Device().wifi('list').execute()))
+    print(pynmcli.NetworkManager('--version').execute())
+    print(pynmcli.get_data(pynmcli.NetworkManager.Device().wifi('list').execute()))
