@@ -26,9 +26,8 @@ Installation
 
 You may install this package in two ways:
 
-- Compile from code (requires setuptools) ::
+- Compile from code ::
 
-    pip install setuptools
     git clone https://github.com/fbarresi/PyNmcli.git
     cd PyNmcli
     python setup.py install
@@ -62,4 +61,8 @@ Just fork this repository and submit your pull request.
 Change log
 ========
 
-- Version 1.0.1 - First release
+- Version 1.0.2 - Added utils for converting cli outputs into python dicts 
+
+- Version 1.0.1 - First working release
+
+- Version 1.0.0 - Test release
