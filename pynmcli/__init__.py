@@ -5,5 +5,5 @@ __version__ = '1.0.3'
 
 
 if __name__ == '__main__':
-    print(pynmcli.NetworkManager('--version').execute())
-    print(pynmcli.get_data(pynmcli.NetworkManager.Device().wifi('list').execute()))
+    print(NetworkManager('--version').execute())
+    print(get_data(NetworkManager.Device().wifi('list').execute()))
