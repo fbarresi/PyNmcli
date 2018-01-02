@@ -1,4 +1,4 @@
-import cli
+from cli import execute_shell
 
 
 class Nmcli(object):
@@ -9,7 +9,7 @@ class Nmcli(object):
             self.command += arg
 
     def execute(self):
-        return cli.execute_shell(self.command)
+        return execute_shell(self.command)
 
 
 class NetworkManager(Nmcli):
