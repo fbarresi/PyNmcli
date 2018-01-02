@@ -10,9 +10,8 @@ def get_version(filename):
 
 setup(name='PyNmcli',
 	version=get_version('pynmcli/__init__.py'),
-    platforms=['linux'],
 	description='Simple python interface to Network Manager CLI',
-	license='commercial license',
+	license='MIT',
 	author='Federico Barresi',
 	author_email='fede.barresi@gmail.com',
 	url='https://github.com/fbarresi/PyNmcli',
