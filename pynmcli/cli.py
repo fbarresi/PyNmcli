@@ -23,7 +23,7 @@ def execute(command='', errorstring='', wait=True, shellexec=False, ags=None):
         if wait:
             p.wait()
             result = get_stdout(p)
-            return result
+            return str(result)
         else:
             return p
     except subprocess.CalledProcessError as e:
