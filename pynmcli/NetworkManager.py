@@ -1,3 +1,6 @@
+import cli
+
+
 class Nmcli(object):
     """doc under: https://developer.gnome.org/NetworkManager/stable/nmcli.html """
     def __init__(self, *args):
@@ -6,7 +9,7 @@ class Nmcli(object):
             self.command += arg
 
     def execute(self):
-        print(self.command)
+        return cli.execute_shell(self.command)
 
 
 class NetworkManager(Nmcli):

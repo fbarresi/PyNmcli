@@ -9,3 +9,8 @@ class CliTests(unittest.TestCase):
         command = NetworkManager.NetworkManager('--version').command
 
         self.assertEqual(command, 'nmcli --version')
+
+    def test_shell_command(self):
+        result = NetworkManager.NetworkManager('--version').execute()
+        print(result)
+        assert result.startswith('nmcli tool, version')
