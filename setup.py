@@ -15,5 +15,5 @@ setup(name='pynmcli',
 	author='Federico Barresi',
 	author_email='fede.barresi@gmail.com',
 	url='https://github.com/fbarresi/PyNmcli',
-	packages=find_packages(exclude=['tests', 'tests.*'])
+	packages=find_packages(exclude=['tests'])
 )
