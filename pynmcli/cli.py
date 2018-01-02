@@ -16,19 +16,19 @@ def execute_shell(command):
 def execute(command='', errorstring='', wait=True, shellexec=False, ags=None):
     try:
         if (shellexec):
-            p=subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         else:
-            p=subprocess.Popen(args=ags)
-			
+            p = subprocess.Popen(args=ags)
+
         if wait:
             p.wait()
-            result=get_stdout(p)
+            result = get_stdout(p)
             return result
         else:
             return p
     except subprocess.CalledProcessError as e:
-        print( 'error occured:' + errorstring)
+        print('error occured:' + errorstring)
         return errorstring
     except Exception as ea:
-        print( 'Exception occured:' + ea.message)
+        print('Exception occured:' + ea.message)
         return errorstring
