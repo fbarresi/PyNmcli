@@ -41,15 +41,15 @@ Usage
 
 Just import the package::
 
-    from pynmcli import NetworkManager
+    import pynmcli
 
 and call Network Manager function just like: ::
 
-    result = NetworkManager.NetworkManager('--version').execute()
+    result = NetworkManager('--version').execute()
 
 or ::
 
-    result = NetworkManager.NetworkManager.Device().wifi('list').execute()
+    result = NetworkManager.Device().wifi('list').execute()
 
 Contribute
 ========
@@ -60,6 +60,8 @@ Just fork this repository and submit your pull request.
 
 Change log
 ========
+
+- Version 1.0.3 - Enhanced usability
 
 - Version 1.0.2 - Added utils for converting cli outputs into python dicts 
 
