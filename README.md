@@ -1,9 +1,6 @@
-*************************
-PyNmcli
-*************************
+# PyNmcli
 
-.. image:: https://travis-ci.org/fbarresi/PyNmcli.svg?branch=master
-    :alt: Travis CI build status
+![Travis CI build status](https://travis-ci.org/fbarresi/PyNmcli.svg?branch=master)
 
 Simple python interface to Network Manager CLI
 
