@@ -55,7 +55,7 @@ or ::
 Contribute
 ========
 
-Whould you like to contribute this project? YES, PLEASE!
+Whould you like to contribute to this project? YES, PLEASE!
 
 Just fork this repository and submit your pull request.
 
