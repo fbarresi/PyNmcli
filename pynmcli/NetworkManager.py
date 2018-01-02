@@ -249,5 +249,5 @@ class NetworkManager(Nmcli):
 
 
 if __name__ == '__main__':
-    NetworkManager('--version').execute()
-    NetworkManager.Device().wifi('list').execute()
+    print(NetworkManager('--version').execute())
+    print(NetworkManager.Device().wifi('list').execute())
