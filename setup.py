@@ -8,7 +8,7 @@ def get_version(filename):
     metadata = dict(re.findall("__([a-z]+)__ = '([^']+)'", content))
     return metadata['version']
 
-setup(name='PyNmcli',
+setup(name='pynmcli',
 	version=get_version('pynmcli/__init__.py'),
 	description='Simple python interface to Network Manager CLI',
 	license='MIT',
