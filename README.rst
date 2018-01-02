@@ -24,41 +24,42 @@ sudo apt-get install network-manager
 Installation
 ========
 
-  You may install this package in two ways:
-  - Compile from code (requires setuptools) ::
+You may install this package in two ways:
+
+- Compile from code (requires setuptools) ::
 
     pip install setuptools
     git clone https://github.com/fbarresi/PyNmcli.git
     cd PyNmcli
     python setup.py install
 
-  - Pypi ::
+- Pypi ::
 
     pip install pynmcli
 
 Usage
 ========
 
-  Just import the package::
+Just import the package::
 
-  from pynmcli import NetworkManager
+    from pynmcli import NetworkManager
 
-  and call Network Manager function just like: ::
+and call Network Manager function just like: ::
 
-  result = NetworkManager.NetworkManager('--version').execute()
+    result = NetworkManager.NetworkManager('--version').execute()
 
-  or ::
+or ::
 
-  result = NetworkManager.NetworkManager.Device().wifi('list').execute()
+    result = NetworkManager.NetworkManager.Device().wifi('list').execute()
 
 Contribute
 ========
 
-  Whould you like to contribute this project? YES, PLEASE!
- 
-  Just fork this repository and submit your pull request.
+Whould you like to contribute this project? YES, PLEASE!
+
+Just fork this repository and submit your pull request.
 
 Change log
 ========
 
-  - Version 1.0.0 - First release
+- Version 1.0.0 - First release
