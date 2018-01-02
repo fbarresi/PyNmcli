@@ -51,6 +51,10 @@ or ::
 
     result = pynmcli.NetworkManager.Device().wifi('list').execute()
 
+you can also use some built-in help methods in order to convert output tables in more handy python dictionaries: ::
+
+    wifi_dict = pynmcli.get_data(pynmcli.NetworkManager.Device().wifi().execute())
+
 Contribute
 ========
 
