@@ -1,1 +1,1 @@
-from NetworkManager import *
+from NetworkManager import Nmcli, NetworkManager
