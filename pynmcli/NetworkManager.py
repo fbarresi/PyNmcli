@@ -246,8 +246,3 @@ class NetworkManager(Nmcli):
             for arg in args:
                 self.command += arg
             return self
-
-
-if __name__ == '__main__':
-    print(NetworkManager('--version').execute())
-    print(NetworkManager.Device().wifi('list').execute())
