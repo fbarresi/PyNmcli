@@ -12,5 +12,4 @@ class CliTests(unittest.TestCase):
 
     def test_shell_command(self):
         result = NetworkManager.NetworkManager('--version').execute()
-        print(result)
-        assert result.startswith('nmcli tool, version')
+        assert result.find('nmcli tool, version') != -1
