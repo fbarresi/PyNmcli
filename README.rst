@@ -19,7 +19,7 @@ This package directly uses ``Network-Manager``.
 
 Your can install it running the following command from shell: ::
 
-sudo apt-get install network-manager
+	sudo apt-get install network-manager
 
 Installation
 ========
