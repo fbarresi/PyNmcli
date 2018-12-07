@@ -13,12 +13,12 @@ def execute_shell(command):
     return execute(command, wait=True, shellexec=True, errorstring='CLI Error')
 
 
-def execute(command='', errorstring='', wait=True, shellexec=False, ags=None):
+def execute(command='', errorstring='', wait=True, shellexec=False, ags=None, env={'LC_ALL' : 'C'}):
     try:
         if (shellexec):
-            p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            p = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, env=env)
         else:
-            p = subprocess.Popen(args=ags)
+            p = subprocess.Popen(args=ags, env=env)
 
         if wait:
             p.wait()
