@@ -1,7 +1,7 @@
 from .NetworkManager import NetworkManager
 from .utils import get_data
 
-__version__ = '1.0.3'
+__version__ = '1.0.4'
 
 
 if __name__ == '__main__':

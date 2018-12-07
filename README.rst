@@ -65,6 +65,8 @@ Just fork this repository and submit your pull request.
 Change log
 ========
 
+- Version 1.0.4 - Fixed localization issues in the use of nmcli
+
 - Version 1.0.3 - Enhanced usability
 
 - Version 1.0.2 - Added utils for converting cli outputs into python dicts 
