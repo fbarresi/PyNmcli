@@ -3,7 +3,7 @@ import re
 
 def get_header(table):
     header_line = table.split('\n')[0]
-    regex_word = r'\w+'
+    regex_word = r'[a-zA-Z0-9_-]+'
     headers = re.findall(regex_word, header_line)
     return headers
 
