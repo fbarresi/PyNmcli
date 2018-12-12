@@ -17,7 +17,6 @@ def get_header(table):
 
 def get_data(table):
     headers = get_header(table)
-    header_line = table.split('\n')[0]
     lines = table.split('\n')
     data = []
     for i in range(1, len(lines)):
