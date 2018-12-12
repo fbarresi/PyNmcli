@@ -64,6 +64,7 @@ Just fork this repository and submit your pull request.
 
 Change log
 ========
+- Version 1.0.5 - Fixed table-header handling
 
 - Version 1.0.4 - Fixed localization issues in the use of nmcli
 
