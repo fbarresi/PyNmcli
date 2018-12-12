@@ -4,8 +4,8 @@ dist: trusty
 language: python
 
 python:
-  - "2.7_with_system_site_packages"
   - "3.5"
+  - "2.7_with_system_site_packages"
 
 addons:
   apt:
@@ -25,7 +25,8 @@ install:
 script:
   - "tox -e $TOX_ENV"
 
-after_success:
-  # We just use 'coveralls-lcov' to convert lcov.info to JSON format.
-  
-
+deploy:
+  provider: pypi
+  user: $pip_user
+  password: $pip_pass
+  skip_existing: true
